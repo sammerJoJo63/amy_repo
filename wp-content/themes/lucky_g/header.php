@@ -35,6 +35,10 @@
 
 <?php wp_head(); ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css">
+<script src="<?php echo get_template_directory_uri(); ?>/js/custom.js"></script>
+
 </head>
 
 <body <?php body_class('antialiased'); ?>>
@@ -66,7 +70,7 @@
 	    ?>
 	    <?php
 	    	// Uncomment the following to enable the right menu (additional menu)
-			
+
 	    	/*
 	        wp_nav_menu( array(
 	            'theme_location' => 'additional',
