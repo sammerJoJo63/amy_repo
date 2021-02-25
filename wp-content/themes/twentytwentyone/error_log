@@ -1,0 +1,1 @@
+[23-Feb-2021 21:25:05 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/samlcar2/public_html/amy/wp-content/themes/twentytwentyone/index.php on line 17
