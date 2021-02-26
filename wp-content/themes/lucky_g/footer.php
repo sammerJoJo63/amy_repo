@@ -1,4 +1,8 @@
-	</div><!-- Row End -->
+
+	<?php
+	if (!( is_page_template( 'home.php') ) ) { ?>
+		</div><!-- Row End -->
+	<?php	} ?>
 </div><!-- Container End -->
 
 <div class="full-width footer-widget">
@@ -27,6 +31,6 @@
 		$(document).foundation();
 	})(jQuery);
 </script>
-	
+
 </body>
 </html>

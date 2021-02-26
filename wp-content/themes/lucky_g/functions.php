@@ -109,4 +109,74 @@ if ( ! function_exists( 'reverie_entry_meta' ) ) {
         echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
     }
 };
+
+function homePageWidgets() {
+
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 1', 'reverie' ),
+  'id' => 'sectionOne',
+  'description' => __( 'First Widget Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 2', 'reverie' ),
+  'id' => 'sectionTwo',
+  'description' => __( 'Second Widgdet Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 3', 'reverie' ),
+  'id' => 'sectionThree',
+  'description' => __( 'Third Widget Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 4', 'reverie' ),
+  'id' => 'sectionFour',
+  'description' => __( 'Fourth Widget Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 5', 'reverie' ),
+  'id' => 'sectionFive',
+  'description' => __( 'Fifth Widget Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+ register_sidebar( array(
+  'name' => __( 'Home Page Section 6', 'reverie' ),
+  'id' => 'sectionSix',
+  'description' => __( 'Sixth Widget Section on Home Page', 'reverie' ),
+  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+
+ ) );
+
+}
+
+add_action( 'widgets_init', 'homePageWidgets' );
 ?>

@@ -43,7 +43,7 @@
 
 <body <?php body_class('antialiased'); ?>>
 
-<header class="contain-to-grid">
+<header class="contain-to-grid<?php if ( is_page_template( 'home.php') )  { ?> home<?php	} ?>">
 	<!-- Starting the Top-Bar -->
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
@@ -92,4 +92,7 @@
 
 <!-- Start the main container -->
 <div class="container" role="document">
-	<div class="row">
+	<?php
+	if (!( is_page_template( 'home.php') ) ) { ?>
+		<div class="row">
+	<?php	} ?>

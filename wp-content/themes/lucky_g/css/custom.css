@@ -100,6 +100,10 @@ header.contain-to-grid {
   height: 100px;
 }
 
+header.contain-to-grid.home {
+  margin-bottom: .5px;
+}
+
 .top-bar {
   background: #fff !important;
 }
@@ -144,4 +148,43 @@ header.contain-to-grid {
 
 .top-bar-section ul li.divider {
   display: none;
+}
+
+#content.contentSection {
+  border: none !important;
+}
+
+
+header#siteName {
+  background-image: url('../img/clouds.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+
+}
+header#siteName .overlay {
+  background-color: rgba(106, 200, 220, 0.75);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  padding: 50px;
+}
+
+header#siteName h1.siteName {
+  color: #8F3A73;
+  font-size: 46px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  line-height: 60px;
+}
+
+header#siteName h2.siteName {
+  color: #134053;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  line-height: 30px;
+  text-transform: uppercase;
 }
