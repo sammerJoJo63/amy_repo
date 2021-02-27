@@ -8,6 +8,10 @@ font-family: 'Oswald', sans-serif;
 
 */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 @-webkit-keyframes buzz-out-on-hover {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -104,6 +108,19 @@ header.contain-to-grid.home {
   margin-bottom: .5px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+  padding-top: 100px;
+}
+
 .top-bar {
   background: #fff !important;
 }
@@ -161,7 +178,7 @@ header#siteName {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 220px;
+  height: 260px;
 
 }
 header#siteName .overlay {
@@ -174,10 +191,10 @@ header#siteName .overlay {
 
 header#siteName h1.siteName {
   color: #8F3A73;
-  font-size: 46px;
+  font-size: 68px;
   text-align: center;
   font-family: 'Fredoka One', cursive;
-  line-height: 60px;
+  line-height: 72px;
 }
 
 header#siteName h2.siteName {
@@ -187,4 +204,97 @@ header#siteName h2.siteName {
   font-family: 'Fredoka One', cursive;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.scallop-down{
+  height:100px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#c7faff), color-stop(0.49, #c7faff), color-stop(0.51, transparent), to(transparent));
+  background-size: 49px 100%;
+}
+
+.scallop-up{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#c7faff), color-stop(0.49, #c7faff), color-stop(0.51, transparent), to(transparent));
+-webkit-background-size: 49px 100%;
+margin-top: -45px;
+}
+
+#homepage1, #homepage1 .row > div {
+  background-color: #c7faff;
+  width: 100%;
+  height: auto;
+}
+
+#homepage1, #homepage2,
+#homepage1 .row > div .entry-content,
+#homepage2 .row > div .entry-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side {
+  width: 49%;
+}
+
+#homepage1 .side img {
+  width: 80%;
+  opacity: 0;
+  left: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+#homepage1 .side img.inView,
+#homepage2 .side:nth-child(odd) img.inView {
+  left: 0;
+  opacity: 1;
+}
+
+#homepage2 .side:nth-child(even) img.inView {
+  right: 0;
+  opacity: 1;
+}
+
+#homepage2 .side img {
+  box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 50%);
+  border: 1px solid #1f1f1f;
+}
+
+#homepage2 .side:nth-child(odd) img {
+  opacity: 0;
+  left: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+#homepage2 .side:nth-child(even) img {
+  opacity: 0;
+  right: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+h2 {
+  color: #6ACC52;
+  text-transform: uppercase;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 1px 0px rgb(0 0 0 / 35%);
+  font-size: 41px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #EAA056;
+}
+
+h4 {
+  color: #90307C;
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
+  line-height: 1.2;
 }

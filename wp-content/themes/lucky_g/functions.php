@@ -114,9 +114,9 @@ function homePageWidgets() {
 
  register_sidebar( array(
   'name' => __( 'Home Page Section 1', 'reverie' ),
-  'id' => 'sectionOne',
+  'id' => 'section-one',
   'description' => __( 'First Widget Section on Home Page', 'reverie' ),
-  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'before_widget' => '<div id="%1$s" class="widget-container side %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3 class="widget-title">',
   'after_title' => '</h3>',
@@ -125,9 +125,9 @@ function homePageWidgets() {
 
  register_sidebar( array(
   'name' => __( 'Home Page Section 2', 'reverie' ),
-  'id' => 'sectionTwo',
+  'id' => 'section-two',
   'description' => __( 'Second Widgdet Section on Home Page', 'reverie' ),
-  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'before_widget' => '<div id="%1$s" class="widget-container side %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3 class="widget-title">',
   'after_title' => '</h3>',
@@ -136,7 +136,7 @@ function homePageWidgets() {
 
  register_sidebar( array(
   'name' => __( 'Home Page Section 3', 'reverie' ),
-  'id' => 'sectionThree',
+  'id' => 'section-three',
   'description' => __( 'Third Widget Section on Home Page', 'reverie' ),
   'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
   'after_widget' => '</div>',
@@ -147,7 +147,7 @@ function homePageWidgets() {
 
  register_sidebar( array(
   'name' => __( 'Home Page Section 4', 'reverie' ),
-  'id' => 'sectionFour',
+  'id' => 'section-four',
   'description' => __( 'Fourth Widget Section on Home Page', 'reverie' ),
   'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
   'after_widget' => '</div>',
@@ -157,7 +157,7 @@ function homePageWidgets() {
  ) );
  register_sidebar( array(
   'name' => __( 'Home Page Section 5', 'reverie' ),
-  'id' => 'sectionFive',
+  'id' => 'section-five',
   'description' => __( 'Fifth Widget Section on Home Page', 'reverie' ),
   'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
   'after_widget' => '</div>',
@@ -167,7 +167,7 @@ function homePageWidgets() {
  ) );
  register_sidebar( array(
   'name' => __( 'Home Page Section 6', 'reverie' ),
-  'id' => 'sectionSix',
+  'id' => 'section-six',
   'description' => __( 'Sixth Widget Section on Home Page', 'reverie' ),
   'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
   'after_widget' => '</div>',

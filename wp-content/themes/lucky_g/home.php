@@ -16,19 +16,46 @@ get_header(); ?>
 			<?php //reverie_entry_meta(); ?>
     </div>
 		</header>
-    <div class="row">
+		<?php
+		if ( !function_exists('section-one') || !dynamic_sidebar('section-one') ) { ?>
+		<div class="scallop-up"></div>
+		<div id="homepage1">
+    <div class="row" >
     <div class="small-12 large-12 column contentSection" id="content" role="main">
 			<div class="entry-content">
 
+				  <?php dynamic_sidebar( 'section-one' ); ?>
+
 			</div>
     </div>
+		</div>
+
+		</div>
+		<div class="scallop-down"></div>
+		<?php } ?>
+		<?php
+		if ( !function_exists('section-two') || !dynamic_sidebar('section-two') ) { ?>
+		<div id="homepage2">
+    <div class="row" >
+    <div class="small-12 large-12 column contentSection" id="content" role="main">
+			<div class="entry-content">
+
+				  <?php dynamic_sidebar( 'section-two' ); ?>
+
+			</div>
+    </div>
+		</div>
+
+		</div>
+		<?php } ?>
+		<div class="row">
 			<footer>
 				<?php //wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
 				<p><?php //the_tags(); ?></p>
 			</footer>
 			<?php //comments_template(); ?>
 	<?php endwhile; // End the loop ?>
+</div>
 
-	</div>
 
 <?php get_footer(); ?>
