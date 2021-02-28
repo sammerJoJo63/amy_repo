@@ -37,11 +37,9 @@ $(document).ready(function () {
 
   // Get the navbar
   var navbar = $("header.contain-to-grid");
-  console.log(navbar);
 
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;
-  console.log(navbar.offset().top);
 
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
@@ -52,6 +50,4 @@ $(document).ready(function () {
     }
   }
 
-
-  //$("#quokkaBook.inView").animate({left: '0', opacity: 1});
 });

@@ -48,6 +48,25 @@ get_header(); ?>
 
 		</div>
 		<?php } ?>
+		<?php
+		if ( !function_exists('section-three') || !dynamic_sidebar('section-three') ) { ?>
+		<div class="scallop-up-hp3"></div>
+		<div id="homepage3">
+		<div class="pg3overlay">
+		<div class="row" >
+		<div class="small-12 large-12 column contentSection" id="content" role="main">
+			<div class="entry-content">
+
+					<?php dynamic_sidebar( 'section-three' ); ?>
+
+			</div>
+		</div>
+		</div>
+
+		</div>
+		</div>
+		<div class="scallop-down-hp3"></div>
+		<?php } ?>
 		<div class="row">
 			<footer>
 				<?php //wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>

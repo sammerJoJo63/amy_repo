@@ -138,7 +138,7 @@ function homePageWidgets() {
   'name' => __( 'Home Page Section 3', 'reverie' ),
   'id' => 'section-three',
   'description' => __( 'Third Widget Section on Home Page', 'reverie' ),
-  'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+  'before_widget' => '<div id="%1$s" class="widget-container side %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3 class="widget-title">',
   'after_title' => '</h3>',
