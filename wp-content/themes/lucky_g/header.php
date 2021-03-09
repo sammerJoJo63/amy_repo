@@ -107,6 +107,7 @@
 
 <!-- Start the main container -->
 <div class="container" role="document">
+	<span style="display: none;">Photo by <a href="https://unsplash.com/@itsethan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Medrano</a> on <a href="https://unsplash.com/s/photos/clouds-and-sky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 	<?php
 	if (!( is_page_template( 'home.php') ) ) { ?>
 		<div class="row">

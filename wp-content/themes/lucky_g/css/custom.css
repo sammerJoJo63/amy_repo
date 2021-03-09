@@ -334,16 +334,27 @@ h4 {
   text-align: center;
 }
 
-#homepage3 h2 {
+#homepage3 h2,
+#homepage4 h3,
+#homepage5 h3 {
   color: #2D4D98;
   text-transform: none;
   margin-bottom: 25px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 1px 0px rgb(0 0 0 / 35%);
+  font-size: 41px;
+  line-height: 1.2;
+}
+
+#homepage4 h3,
+#homepage5 h3 {
+  margin-bottom: 50px;
 }
 
 .scallop-down-hp3{
   height:25px;
   width:100%;
-  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, white), to(white));
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, #e7ffe6), to(#e7ffe6));
   background-size: 49px 100%;
   position: relative;
   z-index: 9999;
@@ -373,4 +384,60 @@ h4 {
 
 #homepage2, #homepage2 .row > div {
   background: #FFFCDA;
+}
+
+#homepage4 {
+  margin-top: -50px;
+}
+
+#homepage4, #homepage4 .row > div {
+  background: #e7ffe6;
+}
+
+#homepage5, #homepage5 .row > div {
+  background: #fff;
+}
+
+.rpwwt-widget ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rpwwt-widget ul li {
+  width: calc((100%/3) - 50px);
+  margin-bottom: 25px;
+}
+
+#homepage4 .rpwwt-widget ul li {
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  background-position: right;
+}
+
+#homepage4 .rpwwt-widget ul li:nth-child(1) {
+  background-image: url(../img/kid-reading-1.jpg);
+}
+
+#homepage4 .rpwwt-widget ul li:nth-child(2) {
+  background-image: url(../img/kid-reading-2.jpg);
+}
+
+#homepage4 .rpwwt-widget ul li:nth-child(3) {
+  background-image: url(../img/kid-reading-3.jpg);
+}
+
+#homepage4 .rpwwt-widget ul li .rpwwt-post-excerpt {
+  height: 100%;
+  background-color: rgba(84, 174, 210, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Fredoka One', cursive;
 }
